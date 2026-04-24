@@ -1,0 +1,29 @@
+[0m15:28:47.016396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022106715010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221078A7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221078A79D0>]}
+
+
+============================== 15:28:47.022049 | 115c997a-11be-427e-b6e0-d63624ec3f62 ==============================
+[0m15:28:47.022049 [info ] [MainThread]: Running with dbt=1.11.8
+[0m15:28:47.022820 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\pfagu\\.dbt', 'invocation_command': 'dbt init projeto_dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:28:47.055879 [debug] [MainThread]: Starter project path: C:\Users\pfagu\OneDrive\Área de Trabalho\Estudo\DBT_CURSO\dbt_curso2\venv\Lib\site-packages\dbt\include\starter_project
+[0m15:28:47.105270 [info ] [MainThread]: 
+Your new dbt project "projeto_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:28:47.105892 [info ] [MainThread]: Setting up your profile.
+[0m15:30:50.367443 [info ] [MainThread]: Profile projeto_dbt written to C:\Users\pfagu\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:30:50.368520 [debug] [MainThread]: Command `dbt init` succeeded at 15:30:50.368392 after 123.48 seconds
+[0m15:30:50.368856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108A5CB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022108A457F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221076F3570>]}
+[0m15:30:50.369189 [debug] [MainThread]: Flushing usage events
+[0m15:30:51.168213 [debug] [MainThread]: An error was encountered while trying to flush usage events
