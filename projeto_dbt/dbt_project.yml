@@ -26,12 +26,17 @@ models:
   projeto_dbt:
     staging:      
       schema: staging         # Schema define onde vai no banco
-      materialized: table     # Materialized define como será criado
+      +materialized: table     # Materialized define como será criado
 #“Tudo dentro da pasta staging será criado como tabela no schema staging”
 
     intermediate:
-      materialized: ephemeral
+      +materialized: ephemeral
 
     marts:
       schema: marts
-      materialized: table
+      +materialized: table
+
+seeds:
+  projeto_dbt:
+    +schema: seeds
+

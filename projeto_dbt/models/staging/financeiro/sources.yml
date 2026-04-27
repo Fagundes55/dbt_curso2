@@ -7,8 +7,12 @@ sources:
     database: postgres
     loaded_at_field: DATA EMISSAO  # controle de atualização
     freshness:
-      - warn_after: {count: 1, period: day} # Manda um aviso caso a tabela não seja atualizada por um dia
-      - error_after: {count: 2, period: day} # Gera um erro caso passe dois dias sem atualizar
+       warn_after: 
+          count: 1 
+          period: day # Manda um aviso caso a tabela não seja atualizada por um dia
+       error_after: 
+          count: 2 
+          period: day # Gera um erro caso passe dois dias sem atualizar
 
     tables: 
       - name: tb_ct_receber
@@ -17,7 +21,7 @@ sources:
           - name: CODIGO_CLIENTE
             description: 'id do cliente'
             tests:
-              - not_null: # Garante que não haverá nulos
+              - not_null # Garante que não haverá nulos
           - name: DOCUMENTO
             description: 'numero do documento'
           - name: FATURA
